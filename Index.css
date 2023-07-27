@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap");
+body {
+  overflow: hidden;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+#input {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #121212;
+  padding: 0.75rem 1rem;
+  box-shadow: 0.25rem 0.25rem #121212;
+  transition: transform 50ms, box-shadow 50ms;
+  width: 20em;
+}
+#input:focus {
+  outline: none;
+}
+#btn {
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #121212;
+  padding: 0.75rem 1rem;
+  box-shadow: 0.25rem 0.25rem #121212;
+  transition: transform 50ms, box-shadow 50ms;
+  margin-left: 2em;
+}
+#btn:active {
+  transform: translate(00.125rem, 00.125rem);
+  box-shadow: 0.125rem 0.125rem #121212;
+}
+#list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+#wrapper {
+  background-color: #f2eeea;
+  width: fit-content;
+  height: fit-content;
+  margin-top: -9em;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  background-color: white;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #121212;
+  padding: 1rem;
+  box-shadow: 0.25rem 0.25rem #121212;
+  transition: transform 50ms, box-shadow 50ms;
+}
+.task {
+  list-style: none;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.close {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 1em;
+}
